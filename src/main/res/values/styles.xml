@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- begin slide_menu Laozuodong -->
+    <style name="slide_menu_item_rl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:background">@drawable/item_slide_menu_bk</item>
+    </style>
+
+    <style name="slide_menu_item_rl_yluotx">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:textColor">#ccffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="com.xfdream.music:drawable_height">23dp</item>
+        <item name="com.xfdream.music:drawable_width">23dp</item>
+        <item name="com.xfdream.music:use_yluo">true</item>
+    </style>
+
+    <style name="slide_menu_item_right_tv">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#88ffff</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="slide_menu_item_right_checkbox">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:button">@android:color/transparent</item>
+    </style>
+
+    <style name="slide_menu_setting_back">
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">#dddddd</item>
+        <item name="com.xfdream.music:drawable_height">23dp</item>
+        <item name="com.xfdream.music:drawable_width">23dp</item>
+        <item name="com.xfdream.music:use_yluo">true</item>
+    </style>
+    <!-- end slide_menu Laozuodong -->
+
+    <!--perference-->
+    <style name="perference_set_activity">
+        <item name="android:windowBackground">@drawable/menu_bg</item>  <!-- 窗口背景 -->
+        <item name="android:focusable">false</item>
+        <item name="android:textColor">#ff000000</item> <!-- 字体颜色 -->
+        <item name="android:colorBackgroundCacheHint">#00000000</item> <!-- 背景缓存色透明，避免拖动全黑 -->
+        <item name="android:windowNoTitle">true</item> <!-- 是否有标题 -->
+    </style>
+
+    <style name="TransparentActivity" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="animationRecentSongListDialog">
+        <item name="android:windowEnterAnimation">@anim/act_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/act_dialog_out</item>
+    </style>
+
+</resources>

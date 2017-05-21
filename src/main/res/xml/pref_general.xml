@@ -1,0 +1,118 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--网络运营商-->
+    <PreferenceCategory
+        android:layout="@layout/setting_title_network_operator"/>
+
+    <!--summary 概要-->
+
+<!--    <SwitchPreference
+        android:backgroundTint="#aaa"
+        android:defaultValue="true"
+        android:key="pref_switch_wifi_net"
+        android:summary="@string/pref_description_wifi_net"
+        android:title="@string/pref_title_wifi_net"/>-->
+
+    <SwitchPreference
+        android:backgroundTint="#aaa"
+        android:defaultValue="true"
+        android:key="pref_switch_traffic_download_photo"
+        android:summary="@string/pref_description_traffic_download_photo"
+        android:title="@string/pref_title_traffic_download_photo"/>
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch_traffic_download_lrc"
+        android:summary="@string/pref_description_traffic_download_lrc"
+        android:title="@string/pref_title_traffic_download_lrc"/>
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch_traffic_listener_online"
+        android:summary="@string/pref_description_traffic_listener_online"
+        android:title="@string/pref_title_traffic_listener_online"/>
+
+    <!--播放器显示-->
+    <PreferenceCategory
+        android:layout="@layout/setting_title_play_show"/>
+
+    <Preference
+        android:key="pref_key_play_bg"
+        android:summary="@string/pref_description_play_bg"
+        android:title="@string/pref_title_play_bg"/>
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch_show_flow_tag"
+        android:summary="@string/pref_description_show_flow_tag"
+        android:title="@string/pref_title_show_flow_tag"/>
+
+    <!--歌词设置-->
+    <PreferenceCategory
+        android:layout="@layout/setting_title_lrc"/>
+
+<!--    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch_show_lrc"
+        android:summary="@string/pref_description_show_lrc"
+        android:title="@string/pref_title_show_lrc"/>-->
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch_show_lrc_play"
+        android:summary="@string/pref_description_show_lrc_play"
+        android:title="@string/pref_title_show_lrc_play"/>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="pref_switch_show_lrc_desk"
+        android:summary="@string/pref_description_show_lrc_desk"
+        android:title="@string/pref_title_show_lrc_desk"/>
+
+<!--    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch_show_lrc_lock"
+        android:dependency="pref_switch_show_lrc"
+        android:summary="@string/pref_description_show_lrc_lock"
+        android:title="@string/pref_title_show_lrc_lock"/>-->
+
+
+    <!--其他设置-->
+    <PreferenceCategory
+        android:layout="@layout/setting_title_other"/>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="pref_switch_try_listener"
+        android:summary="@string/pref_description_try_listener"
+        android:title="@string/pref_title_try_listener"/>
+<!--    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch_screen_long_light"
+        android:summary="@string/pref_description_screen_long_light"
+        android:title="@string/pref_title_screen_long_light"/>-->
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch_memory_exit"
+        android:summary="@string/pref_description_memory_exit"
+        android:title="@string/pref_title_memory_exit"/>
+
+<!--    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_switch_shade"
+        android:summary="@string/pref_description_switch_shade"
+        android:title="@string/pref_title_switch_shade"/>-->
+
+    <PreferenceCategory
+        android:layout="@layout/setting_title_update"/>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="pref_switch_check_update"
+        android:summary="@string/pref_description_check_update"
+        android:title="@string/pref_title_check_update"/>
+
+    <Preference
+        android:key="pref_key_update"
+        android:summary="@string/pref_description_im_check_update"
+        android:title="@string/pref_title_im_check_update"/>
+</PreferenceScreen>

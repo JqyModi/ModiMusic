@@ -1,0 +1,338 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:yluo="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="14dp"
+		android:paddingLeft="17dp"
+		android:paddingRight="17dp"
+		android:paddingTop="14dp">
+
+		<ImageView
+			android:id="@+id/iv_header_icon"
+			android:layout_width="52dp"
+			android:layout_height="52dp"
+			android:src="@drawable/b9j"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="18dp"
+			android:layout_toRightOf="@id/iv_header_icon"
+			android:gravity="center_vertical"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="樱天寻"
+				android:textColor="@android:color/white"/>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+
+				<ImageView
+					android:layout_width="21dp"
+					android:layout_height="12dp"
+					android:src="@drawable/e0f"/>
+
+				<ImageView
+					android:layout_width="29dp"
+					android:layout_height="12dp"
+					android:layout_marginLeft="5dp"
+					android:src="@drawable/e0d"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<ImageButton
+			android:id="@+id/btn_header_change_skin"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:background="@null"
+			android:scaleType="fitXY"
+			android:src="@drawable/kg_listen_slide_menu_header_skin_btn_normal"/>
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:layout_marginLeft="17dp"
+		android:layout_marginRight="17dp"
+		android:background="#22ffffff"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<!-- 消息中心 -->
+
+			<RelativeLayout
+				android:id="@+id/rl_message_center"
+				style="@style/slide_menu_item_rl">
+
+				<com.modi.modimusic.ui.widget.YluoTextView
+					style="@style/slide_menu_item_rl_yluotx"
+					android:drawableLeft="@drawable/e0n"
+					android:text="@string/slide_menu_message_text"/>
+
+				<TextView
+					style="@style/slide_menu_item_right_tv"
+					android:drawableLeft="@drawable/slide_menu_message_icon"/>
+			</RelativeLayout>
+
+			<!-- 我的好友 -->
+
+			<RelativeLayout
+				android:id="@+id/rl_my_friend"
+				style="@style/slide_menu_item_rl">
+
+				<com.modi.modimusic.ui.widget.YluoTextView
+					style="@style/slide_menu_item_rl_yluotx"
+					android:drawableLeft="@drawable/e52"
+					android:text="@string/slide_menu_my_friend_text"/>
+
+				<TextView
+					style="@style/slide_menu_item_right_tv"
+					android:drawableLeft="@drawable/slide_menu_message_icon"/>
+			</RelativeLayout>
+
+
+			<!-- 会员中心 -->
+
+			<RelativeLayout
+				android:id="@+id/rl_member_center"
+				style="@style/slide_menu_item_rl">
+
+				<com.modi.modimusic.ui.widget.YluoTextView
+					style="@style/slide_menu_item_rl_yluotx"
+					android:drawableLeft="@drawable/e0y"
+					android:text="@string/slide_menu_member_text"/>
+
+				<TextView
+					style="@style/slide_menu_item_right_tv"
+					android:drawableLeft="@drawable/slide_menu_message_icon"/>
+			</RelativeLayout>
+			<!-- 流量包月 -->
+			<RelativeLayout
+				android:id="@+id/rl_cell_phone_traffic"
+				style="@style/slide_menu_item_rl">
+
+				<com.modi.modimusic.ui.widget.YluoTextView
+					style="@style/slide_menu_item_rl_yluotx"
+					android:drawableLeft="@drawable/e0m"
+					android:text="@string/slide_menu_cell_phone_traffic"/>
+
+				<TextView
+					style="@style/slide_menu_item_right_tv"
+					android:drawableLeft="@drawable/slide_menu_message_icon"/>
+			</RelativeLayout>
+
+			<!-- 定时关闭 -->
+
+			<RelativeLayout
+				android:id="@+id/rl_time_close"
+				style="@style/slide_menu_item_rl">
+
+				<com.modi.modimusic.ui.widget.YluoTextView
+					style="@style/slide_menu_item_rl_yluotx"
+					android:drawableLeft="@drawable/e0o"
+					android:text="@string/slide_menu_timeclose_text"/>
+
+				<TextView
+					style="@style/slide_menu_item_right_tv"
+					android:drawableLeft="@drawable/slide_menu_timeclose_icon"/>
+			</RelativeLayout>
+
+			<!-- 蝰蛇音效 -->
+
+			<RelativeLayout
+				android:id="@+id/rl_sound"
+				style="@style/slide_menu_item_rl">
+
+				<com.modi.modimusic.ui.widget.YluoTextView
+					style="@style/slide_menu_item_rl_yluotx"
+					android:drawableLeft="@drawable/e0z"
+					android:text="@string/slide_menu_sound_text"/>
+
+				<TextView
+					style="@style/slide_menu_item_right_tv"
+					android:drawableLeft="@drawable/slide_menu_soundtype_icon"/>
+			</RelativeLayout>
+
+			<!-- 听歌识曲 -->
+
+			<RelativeLayout
+				android:id="@+id/rl_listen_song"
+				style="@style/slide_menu_item_rl">
+
+				<com.modi.modimusic.ui.widget.YluoTextView
+					style="@style/slide_menu_item_rl_yluotx"
+					android:drawableLeft="@drawable/e0p"
+					android:text="@string/slide_menu_listen_song_text"/>
+
+				<TextView
+					style="@style/slide_menu_item_right_tv"
+					android:drawableLeft="@drawable/slide_menu_soundtype_icon"/>
+			</RelativeLayout>
+
+			<!-- 启动问候音 -->
+
+			<RelativeLayout
+				android:id="@+id/rl_hello"
+				style="@style/slide_menu_item_rl">
+
+				<com.modi.modimusic.ui.widget.YluoTextView
+					style="@style/slide_menu_item_rl_yluotx"
+					android:drawableLeft="@drawable/eng"
+					android:text="@string/slide_menu_hello_text"/>
+
+				<TextView
+					style="@style/slide_menu_item_right_tv"
+					android:layout_alignParentRight="true"
+					android:text="经典版"
+					android:textColor="#aadddddd"
+					android:textSize="10dp"
+					android:visibility="visible"/>
+			</RelativeLayout>
+
+			<!-- 分割线 -->
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:layout_marginBottom="10dp"
+				android:layout_marginLeft="17dp"
+				android:layout_marginRight="17dp"
+				android:layout_marginTop="10dp"
+				android:background="#55ffffff"/>
+
+			<!-- 仅WIFI联网 -->
+
+			<RelativeLayout
+				android:id="@+id/rl_wifi"
+				style="@style/slide_menu_item_rl"
+				android:layout_marginBottom="5dp"
+				android:layout_marginTop="5dp"
+			>
+
+				<com.modi.modimusic.ui.widget.YluoTextView
+					style="@style/slide_menu_item_rl_yluotx"
+					android:drawableLeft="@drawable/e0t"
+					android:text="@string/slide_menu_wifi_text"/>
+
+				<CheckBox
+					android:id="@+id/cb_wifi_connect"
+					style="@style/slide_menu_item_right_checkbox"
+					android:layout_width="45dp"
+					android:layout_height="24dp"
+					android:clickable="true"
+					android:background="@drawable/checkbox_slide_menu_bk"/>
+				<!--<CheckBox
+					android:id="@+id/cb_wifi_connect"
+					android:layout_width="45dp"
+					android:layout_alignParentRight="true"
+					android:background="#9f9"
+					android:layout_height="24dp" />-->
+			</RelativeLayout>
+
+			<!-- 桌面歌词  android:drawableLeft="@drawable/slide_menu_checkbox_close" -->
+
+			<RelativeLayout
+				style="@style/slide_menu_item_rl"
+				android:layout_marginBottom="5dp"
+				android:layout_marginTop="5dp"
+				android:clickable="false"
+
+			>
+
+				<com.modi.modimusic.ui.widget.YluoTextView
+					style="@style/slide_menu_item_rl_yluotx"
+					android:drawableLeft="@drawable/e0b"
+					android:text="@string/slide_menu_desk_lyric_text"/>
+
+				<CheckBox
+					android:id="@+id/cb_desk_lyric"
+					style="@style/slide_menu_item_right_checkbox"
+					android:layout_width="45dp"
+					android:layout_height="24dp"
+					android:clickable="true"
+					android:background="@drawable/checkbox_slide_menu_bk"/>
+			</RelativeLayout>
+
+			<!-- 锁屏歌词 -->
+
+			<RelativeLayout
+				style="@style/slide_menu_item_rl"
+				android:layout_marginBottom="5dp"
+				android:layout_marginTop="5dp"
+				android:clickable="false">
+
+				<com.modi.modimusic.ui.widget.YluoTextView
+					style="@style/slide_menu_item_rl_yluotx"
+					android:drawableLeft="@drawable/e0j"
+					android:text="@string/slide_menu_lock_lyric_text"/>
+
+				<CheckBox
+					android:id="@+id/cb_lock_lyric"
+					style="@style/slide_menu_item_right_checkbox"
+					android:layout_width="45dp"
+					android:layout_height="24dp"
+					android:clickable="true"
+					android:background="@drawable/checkbox_slide_menu_bk"/>
+			</RelativeLayout>
+		</LinearLayout>
+	</RelativeLayout>
+	<!-- android:background="@android:color/white" -->
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:layout_marginLeft="17dp"
+		android:layout_marginRight="17dp"
+		android:background="#55ffffff"/>
+
+	<!-- 设置&退出 -->
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:clickable="true"
+		android:paddingBottom="20dp"
+		android:paddingLeft="30dp"
+		android:paddingRight="20dp"
+		android:paddingTop="20dp">
+
+		<com.modi.modimusic.ui.widget.YluoTextView
+			android:id="@+id/tv_setting"
+			style="@style/slide_menu_setting_back"
+			android:layout_alignParentLeft="true"
+			android:drawableLeft="@drawable/e08"
+			android:text="@string/slide_menu_setting_text"/>
+
+		<com.modi.modimusic.ui.widget.YluoTextView
+			android:id="@+id/tv_back"
+			style="@style/slide_menu_setting_back"
+			android:layout_alignParentRight="true"
+			android:drawableLeft="@drawable/e06"
+			android:text="@string/slide_menu_back_text"/>
+	</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textAppearanceDialogWindowTitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="dialogWindowTitle">
+        <item name="android:textAppearance">@style/textAppearanceDialogWindowTitle</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="animationDialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="XfDialog">
+
+        <!-- 屏幕背景不变暗 -->
+        <!-- <item name="android:backgroundDimEnabled">false</item> -->
+        <!-- 更换背景图片实现全透明 -->
+        <item name="android:windowBackground">@color/translucence</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否悬浮在Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 更改对话框标题栏 -->
+        <item name="android:windowTitleStyle">@style/dialogWindowTitle</item>
+        <item name="android:windowAnimationStyle">@style/animationDialog</item>
+        <item name="android:popupBackground">@color/translucence</item>
+        <!--
+        android:windowSoftInputMode = "adjustResize" ，软键盘弹出时，要对主窗口布局重新进行布局，并调用onSizeChanged方法，切记一点当我们设置为“adjustResize”时，我们的界面不要设置为全屏模式，否则设置了这个属性也不会有什么效果。
+        而当我们设置android: windowSoftInputMode = "adjustPan"时，主窗口就不会调用onSizeChanged方法，界面的一部分就会被软键盘覆盖住，就不会被挤到软键盘之上了。
+        -->
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+</resources>

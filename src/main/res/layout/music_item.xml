@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        android:layout_marginLeft="33dp"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/music_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ececec"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:text="未知歌曲名"
+            android:textStyle="bold" />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2sp"
+            >
+              <TextView
+        android:id="@+id/music_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="03:42"
+        android:textSize="10sp"
+        android:textColor="#666666" />
+             <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:textSize="10sp"
+        android:layout_marginLeft="4sp"
+        android:textColor="#666666" />
+           <TextView
+            android:id="@+id/music_item_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4sp"
+            android:text="未知艺术家"
+            android:textSize="10sp"
+            android:singleLine="true"
+            android:textColor="#666666"
+             />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+</RelativeLayout>

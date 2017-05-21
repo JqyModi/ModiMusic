@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/music_land_bg"
+>
+
+    <RelativeLayout
+        android:id="@+id/relative54543"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/btn_complete_na" >
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/search"
+            android:background="#00000000"
+            android:hint="输入要查找的歌曲名"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/resultsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14sp"
+            android:layout_marginTop="15sp"
+            android:textColor="#8e8b8b" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="35sp"
+            android:layout_height="40sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5sp"
+            android:layout_marginLeft="15sp"
+            android:alpha="0.5"
+            android:background="@drawable/v5_bottom_bar_search_icon_pressed_light" />
+    </RelativeLayout>
+
+<include 
+    layout="@layout/musiclist"
+    />
+
+</LinearLayout>

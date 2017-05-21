@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <group android:checkableBehavior="single">
+&lt;!&ndash;        <item
+            android:id="@+id/nav_message_text"
+            android:icon="@drawable/e0n"
+            android:title="@string/slide_menu_message_text"/>
+        <item
+            android:id="@+id/nav_member_text"
+            android:icon="@drawable/e0y"
+            android:title="@string/slide_menu_member_text"/>
+        <item
+            android:id="@+id/nav_cell_phone_traffic"
+            android:icon="@drawable/e0m"
+            android:title="@string/slide_menu_cell_phone_traffic"/>
+        <item
+            android:id="@+id/nav_my_friend_text"
+            android:icon="@drawable/e52"
+            android:title="@string/slide_menu_my_friend_text"/>&ndash;&gt;
+        <item
+            android:id="@+id/nav_sound_text"
+            android:icon="@drawable/e0z"
+            android:title="@string/slide_menu_sound_text"/>
+        <item
+            android:id="@+id/nav_listen_song_text"
+            android:icon="@drawable/e0p"
+            android:title="@string/slide_menu_listen_song_text"/>
+        <item
+            android:id="@+id/nav_hello_text"
+            android:icon="@drawable/eng"
+            android:title="@string/slide_menu_hello_text"/>
+    </group>-->
+    <item android:title="general">
+        <menu>
+            <item
+                android:id="@+id/nav_sound_text"
+                android:icon="@drawable/e0z"
+                android:title="@string/slide_menu_sound_text"/>
+            <item
+                android:id="@+id/nav_listen_song_text"
+                android:icon="@drawable/e0p"
+                android:title="@string/slide_menu_listen_song_text"/>
+            <item
+                android:id="@+id/nav_hello_text"
+                android:icon="@drawable/eng"
+                android:title="@string/slide_menu_hello_text"/>
+            <item
+                android:id="@+id/nav_flow_tag_text"
+                android:icon="@drawable/icon_flow_tag"
+                android:title="@string/slide_menu_flow_tag_text"/>
+            <item
+                android:id="@+id/nav_scanning_text"
+                android:icon="@drawable/icon_scanning_tag"
+                android:title="@string/slide_menu_scanning_tag_text"/>
+        </menu>
+    </item>
+
+    <item android:title="other">
+        <menu>
+            <item
+                android:id="@+id/nav_sleep_text"
+                android:icon="@drawable/e0c"
+                android:title="@string/slide_menu_sleep_text"/>
+<!--            <item
+                android:id="@+id/nav_message_text"
+                android:icon="@drawable/e0n"
+                android:title="@string/slide_menu_message_text"/>-->
+            <item
+                android:id="@+id/nav_brightness_text"
+                android:icon="@drawable/icon_brightness"
+                android:title="@string/slide_menu_brightness_text"/>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/icon_about"
+                android:title="@string/pref_title_about"/>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <!--<item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/share_title"/>-->
+            <item
+                android:id="@+id/nav_setting_text"
+                android:icon="@drawable/e08"
+                android:title="@string/slide_menu_setting_text"/>
+            <item
+                android:id="@+id/nav_exit_title"
+                android:icon="@drawable/e06"
+                android:title="@string/exit_title"/>
+        </menu>
+    </item>
+
+</menu>

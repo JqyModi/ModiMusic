@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+
+	<!--
+		搜歌API：
+		http://mobilecdn.kugou.com/api/v3/search/song?format=jsonp&keyword=%E4%BB%99%E5%89%91&page=1&pagesize=10&showtype=1&callback=kgJSONP238513750
+		返回带歌曲列表json文件。
+		利用json中的hash查歌曲文件地址：
+		http://m.kugou.com/app/i/getSongInfo.php?hash=2b616f6ab9f8655210fd823b900085cc&cmd=playInfo
+		返回的就是m4a文件的地址了。
+		经过这两步，就可以利用酷狗搜歌，听歌，下歌。
+
+		酷狗每日歌曲推荐
+		http://everydayrec.service.kugou.com/everyday_song_recommend?platform=android&appid=1100&mid=252521543232814882237569999152811328050&clientver=8352&key=5b3d9ff6f5f094c76154cdfa95f61421&clienttime=1481775715213&userid=0
+
+	-->
+
+	<song id="1">
+		<name>倩女幽魂</name>
+		<artist>张国荣</artist>
+		<album>丰盛的一生之国语精选</album>
+		<displayName>倩女幽魂.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http:\/\/fs.open.kugou.com\/f261dd5015d13e99002b46558e1b459f\/585cd49c\/G005\/M05\/14\/1D\/pYYBAFS3_sGAAt1HADSgAG1yVg0796.mp3</netUrl>
+		<durationTime>215000</durationTime>
+		<size>3448832</size>
+	</song>
+	<song id="2">
+		<name>白月光</name>
+		<artist>张信哲</artist>
+		<album>下一个永远</album>
+		<displayName>白月光.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http:\/\/fs.open.kugou.com\/2720214b6ad315dc991ddf3dd7eba907\/585cec50\/G036\/M00\/1B\/03\/BJQEAFYuiIuAaSmxAEPsuF9SzHM918.mp3</netUrl>
+		<durationTime>278000</durationTime>
+		<size>4451512</size>
+	</song>
+	<song id="3">
+		<name>不分手的恋爱</name>
+		<artist>汪苏泷</artist>
+		<album>不分手的恋爱</album>
+		<displayName>不分手的恋爱.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http:\/\/fs.open.kugou.com\/6bb8960e65c96627b591e30ba509bb74\/585cf0c9\/G007\/M07\/1E\/01\/Rw0DAFT7ttuAEFzzADJgTVRmRe4271.mp3</netUrl>
+		<durationTime>205000</durationTime>
+		<size>3301453</size>
+	</song>
+	<song id="4">
+		<name>老男孩</name>
+		<artist>筷子兄弟</artist>
+		<album>老男孩</album>
+		<displayName>老男孩.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http:\/\/fs.open.kugou.com\/3261432673157518bd2a197c740ff576\/585ceea7\/G001\/M04\/02\/17\/oYYBAFS5w7CAd1dGAElPhOoEYPw313.mp3</netUrl>
+		<durationTime>300000</durationTime>
+		<size>4804484</size>
+	</song>
+	<song id="5">
+		<name>最初的梦想</name>
+		<artist>范玮琪</artist>
+		<album>最初的梦想</album>
+		<displayName>最初的梦想.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http:\/\/fs.open.kugou.com\/2bc0280f55a2ed43dea1cf130cd3e63f\/585cf388\/G052\/M07\/00\/13\/FJQEAFaslseAAYCiAEWtoFRlfyo684.mp3</netUrl>
+		<durationTime>285000</durationTime>
+		<size>4566432</size>
+	</song>
+	<song id="6">
+		<name>父亲</name>
+		<artist>筷子兄弟</artist>
+		<album>父亲</album>
+		<displayName>父亲.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http:\/\/fs.open.kugou.com\/5f5ee3e55e2e0d4abfbd8a7c34e0120a\/585cf425\/G014\/M08\/17\/14\/Tg0DAFUPK_WARJU9AEmByFGoE2M516.mp3</netUrl>
+		<durationTime>301000</durationTime>
+		<size>4817352</size>
+	</song>
+	<song id="7">
+		<name>心要让你听见</name>
+		<artist>邰正宵</artist>
+		<album>邰正宵精选</album>
+		<displayName>心要让你听见.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http:\/\/fs.open.kugou.com\/c9a75b5ef7f6a2c312b030145a36928d\/585cf4ad\/G042\/M04\/13\/1B\/ag0DAFYvlDyAFq8mADqZykVcx-0803.mp3</netUrl>
+		<durationTime>239000</durationTime>
+		<size>3840458</size>
+	</song>
+	<song id="8">
+		<name>把悲伤留给自己</name>
+		<artist>陈升</artist>
+		<album>滚石30周年精选珍藏集</album>
+		<displayName>把悲伤留给自己.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http:\/\/fs.open.kugou.com\/333bbd6d5ccce4749ba509e30979f70c\/585cf357\/G012\/M09\/10\/15\/TA0DAFT73ZCARDsnAFH_hFs8gxI437.mp3</netUrl>
+		<durationTime>335000</durationTime>
+		<size>5373828</size>
+	</song>
+	<song id="9">
+		<name>难道爱一个人有错吗</name>
+		<artist>郑源</artist>
+		<album>爱过的人</album>
+		<displayName>难道爱一个人有错吗.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http:\/\/fs.open.kugou.com\/b1b4c9cd3c60b11613cb38ef8ec57c8b\/585cf5a6\/G006\/M08\/04\/03\/Rg0DAFS6mQuANNoZAEC2iGnctB4135.mp3</netUrl>
+		<durationTime>265000</durationTime>
+		<size>4241032</size>
+	</song>
+	<song id="10">
+		<name>幸福恋人</name>
+		<artist>郑源</artist>
+		<album>源情歌</album>
+		<displayName>幸福恋人.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http:\/\/fs.open.kugou.com\/78028ee89d2ce8207e918733c4910157\/585cf608\/G005\/M08\/01\/11\/RQ0DAFT9xpaABRoSADjWHIcjCbw388.mp3</netUrl>
+		<durationTime>232000</durationTime>
+		<size>3724828</size>
+	</song>
+	<song id="11">
+		<name>她还在别伤害</name>
+		<artist>mc小洲</artist>
+		<album>源情歌</album>
+		<displayName>她还在别伤害.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http://music.123456dj.com/xiaozhou/mc%D0%A1%D6%DE%20-%20%CB%FD%BB%B9%D4%DA%B1%F0%C9%CB%BA%A6.mp3</netUrl>
+		<durationTime>400000</durationTime>
+		<size>9200000</size>
+	</song>
+</list>

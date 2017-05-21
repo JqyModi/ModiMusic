@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    /*compileSdkVersion 23
+    buildToolsVersion "24.0.0"*/
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    //设置编码
+//    compileOptions.encoding = "GBK"
+    compileOptions.encoding = "UTF-8"
+
+    defaultConfig {
+        applicationId "com.xfdream.music"
+        minSdkVersion 17
+        targetSdkVersion 23
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+/*    task androidJavadocs(type: Javadoc) {
+        source = android.sourceSets.main.java.srcDirs
+    }
+
+    task androidJavadocsJar(type: Jar) {
+        classifier = 'javadoc'
+        from androidJavadocs.destinationDir
+    }
+    task androidSourcesJar(type: Jar) {
+        classifier = 'sources'
+        from android.sourceSets.main.java.srcDirs
+    }
+
+    artifacts {
+        archives androidSourcesJar
+        archives androidJavadocsJar
+    }
+*/
+    //设置编码
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+//        options.encoding = 'GBK'
+    }
+}
+
+
+
+dependencies {
+    compile files('libs/tmsuiclrc.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.blankj:utilcode:1.1.5'
+//    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+
+//    compile 'io.reactivex:rxjava:1.1.0'//Rx的包
+//    compile 'io.reactivex:rxandroid:1.1.0'//Rx的包
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'//Retrofit2所需要的包
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'//ConverterFactory的Gson依赖包
+//    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'//CallAdapterFactory的Rx依赖包
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0-beta4'//ConverterFactory的String依赖包
+    compile 'com.google.code.gson:gson:2.6.2'//Gosn解析包
+
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okio:okio:1.5.0'
+
+    compile 'org.wlf:FileDownloader:0.3.2'  //文件下载框架
+
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+
+    compile 'org.greenrobot:eventbus:3.0.0' //事件总线
+
+    //导入高斯模糊jar
+    compile 'net.qiujuer.genius:blur:2.0.0-beta4'
+    compile 'net.robinx:lib.blurview:1.0.2'
+}

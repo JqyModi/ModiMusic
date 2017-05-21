@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.xfdream.music"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="4"/>
+    <!-- 允许读取手机状态相关数据 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 允许访问SD卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 允许访问互联网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 允许挂载和反挂载文件系统可移动存储 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 允许程序读取或写入系统设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- 允许访问网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 允许使用PowerManager的 WakeLocks保持进程在休眠时从屏幕消失 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    //
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 显示顶层浮窗 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/app_icon"
+        android:name=".app.MyApplication"
+        android:label="@string/app_name">
+
+        <!--
+        <activity android:name=".activity.BaseActivity"
+                  android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <!-- 配置欢迎页 -->
+        <activity android:name=".activity.WelcomeActivity"
+                  android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 配置引导页 -->
+        <activity
+            android:name=".activity.GuideActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <!--
+        <activity
+            android:name=".activity.ListMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".activity.PlayerMainActivity"
+            android:theme="@style/TransparentActivity">
+        </activity>
+        <activity android:name=".activity.ScanMusicActivity"
+                  android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity android:name=".activity.ScanDirectoryActivity"
+                  android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity android:name=".activity.SystemSettingActivity"
+                  android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity android:name=".activity.AboutActivity">
+        </activity>
+        <activity android:name=".activity.SkinSettingActivity"
+                  android:theme="@style/Base.Theme.AppCompat">
+        </activity>
+        <activity android:name=".test.TestActivity">
+        </activity>
+        <activity android:name=".activity.WidgetInitActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.DownLoadService">
+            <intent-filter>
+                <action android:name="com.xfdream.music.service.download"/>
+            </intent-filter>
+        </service>
+        <service android:name=".service.MediaPlayerService">
+            <intent-filter>
+                <action android:name="com.xfdream.music.service.meidaplayer"/>
+            </intent-filter>
+        </service>
+
+        <!--桌面歌词显示服务-->
+        <service android:name=".service.FlowLrcService">
+            <intent-filter>
+                <action android:name="com.xfdream.music.service.desklrc"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".recevier.AutoShutdownRecevier">
+        </receiver>
+        <receiver android:name=".recevier.PhoneStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".recevier.EarphoneStateRecevier">
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".widget.MusicKnowWidget"
+            android:icon="@drawable/icon"
+            android:label="@string/appwidget_labelname">
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/musicknow_widget_config">
+            </meta-data>
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Base.Theme.AppCompat">
+        </activity>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Base.Theme.AppCompat">
+        </activity>
+        <activity
+            android:name=".activity.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.SkinPicActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.SkinColorActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data android:name="com.google.android.gms.version"
+                   android:value="@integer/google_play_services_version"/>
+    </application>
+
+</manifest>
